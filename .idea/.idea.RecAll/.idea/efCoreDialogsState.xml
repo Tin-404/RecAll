@@ -5,8 +5,9 @@
       <map>
         <entry key="Common:27931142-8826-4f17-a7c6-e27232fef077:dbContext" value="RecAll.Contrib.TextList.Api.Services.TextListContext" />
         <entry key="Common:buildConfiguration" value="Debug" />
+        <entry key="Common:c5950f28-c9d9-4083-a54e-a79393677ed1:dbContext" value="RecAll.Core.List.Infrastructure.ListContext" />
         <entry key="Common:noBuild" value="false" />
-        <entry key="Common:outputFolder" value="Migrations" />
+        <entry key="Common:outputFolder" value="..\List.Api\Infrastructure\Migrations\List" />
       </map>
     </option>
   </component>

@@ -13,6 +13,15 @@ public class ListController {
     private readonly ILogger<ListController> _logger;
     private readonly IIdentityService _identityService;
     
+    public ListController(IMediator mediator, IIdentityService identityService,
+        ILogger<ListController> logger) {
+        _mediator = mediator ??
+                    throw new ArgumentNullException(nameof(mediator));
+        _identityService = identityService ??
+                           throw new ArgumentNullException(nameof(identityService));
+        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+    }
+    
     [Route("create")]
     [HttpPost]
     public async Task<ActionResult<ServiceResultViewModel>> CreateAsync(
